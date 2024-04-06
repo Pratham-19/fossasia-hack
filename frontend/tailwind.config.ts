@@ -26,7 +26,7 @@ module.exports = {
         "light-grad":
           "linear-gradient(to bottom, rgba(210, 230, 239, 1), rgba(111, 183, 248, 1))",
         "linear-grad":
-          "linear-gradient(to right, rgba(48, 25, 105, 0.3),rgba(29, 12, 70, 0.8), rgba(29, 12, 70, 1))",
+          "linear-gradient(to left, rgba(246, 251, 255, 1),rgba(246, 251, 255, 0.3))",
       },
       colors: {
         "bg-1": "#E7F4FF",
