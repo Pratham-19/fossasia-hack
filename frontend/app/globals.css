@@ -1,33 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 256.92, 90.7%, 8.43%;
+    --foreground: 258.62, 47.54%, 88.04%;
+
+    --card: 256.92, 90.7%, 8.43%;
+    --card-foreground: 258.62, 47.54%, 88.04%;
+
+    --popover: 256.92, 90.7%, 8.43%;
+    --popover-foreground: 258.62, 47.54%, 88.04%;
+
+    --primary: 36 82% 64%;
+    --primary-foreground: 256.92, 90.7%, 8.43%;
+
+    --secondary: 36 74% 74%;
+    --secondary-foreground: 258.62, 47.54%, 88.04%;
+
+    --muted: 29 100% 85%;
+    --muted-foreground: 24 5.4% 63.9%;
+
+    --accent: 29 100% 85%;
+    --accent-foreground: 256.92, 90.7%, 8.43%;
+
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 258.62, 47.54%, 88.04%;
+
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 20.5 90.2% 48.2%;
+    --radius: 0.5rem;
+
+    --bg-1: 258.62, 47.54%, 88.04%;
+    --bg-2: 256.36, 62.86%, 13.73%;
+    --theme-500: 257.02, 82.46%, 66.47%;
+    --theme-200: 258.62, 47.54%, 88.04%;
+    --theme-200-30: 258.62, 47.54%, 88.04%;
+    --theme-200-10: 258.62, 47.54%, 88.04%;
+    --theme-300: 256.74, 100%, 83.14%;
+    --theme-400: 256.36, 13.1%, 32.94%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  display: none;
+  -webkit-box-shadow: none;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #00000065;
+  border: 1px solid #000;
+  border-right-width: 0;
+}
+
+.blur-box {
+  box-shadow: 0 0 25px 0 #8b63f0d3;
+}
+
+.blur-box-light {
+  box-shadow: 0 -20px 2000px 0 #8b63f03b;
+}
+
+.blur-box-fade {
+  box-shadow: 0 0 50px 10px #8b63f03b;
 }
