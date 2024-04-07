@@ -105,7 +105,7 @@ const Store = () => {
               Manage your <span className="font-bold">products</span>
             </p>
             <p>
-              Get paid instantly in <span className="font-bold">GHO</span>
+              Get paid instantly in <span className="font-bold">USDC</span>
             </p>
           </div>
           <div className="flex flex-col gap-3">

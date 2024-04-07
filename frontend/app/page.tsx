@@ -69,7 +69,7 @@ export default function Home() {
         {services.map(({ index, img, title, desc }) => (
           <div
             key={index}
-            className="flex w-5/12 h-fit gap-4 rounded-xl border-bg-1 bg-bg-2/95 p-4 items-center justify-center"
+            className="flex w-5/12 h-fit gap-4 rounded-2xl border-bg-1 bg-bg-2/95 p-4 items-center justify-center"
           >
             <div className="w-6/12">
               <Image
@@ -82,8 +82,8 @@ export default function Home() {
             </div>
 
             <div className="w-2/4 flex flex-col gap-3">
-              <h4 className="text-2xl font-semibold">{title}</h4>
-              <p className="font-light">{desc}</p>
+              <h4 className="text-3xl font-semibold">{title}</h4>
+              <p className="text-lg">{desc}</p>
             </div>
           </div>
         ))}
@@ -93,8 +93,9 @@ export default function Home() {
           <Image
             src={"/land-1.jpg"}
             alt="wave"
-            className="absolute object-contain top-10 rounded-3xl z-10  w-fit"
-            fill
+            className="absolute top-10 left-10 rounded-3xl z-10 blur-box-fade"
+            width={1000}
+            height={1000}
           />
         </div>
         <div className="w-1/2 flex justify-center">
@@ -115,7 +116,7 @@ export default function Home() {
           <Image
             src={"/land-2.jpg"}
             alt="wave"
-            className="absolute top-10 rounded-3xl z-10 blur-box-fade w-fit"
+            className="absolute top-10 rounded-3xl z-10 blur-box-fade w-full"
             width={1000}
             height={1000}
           />

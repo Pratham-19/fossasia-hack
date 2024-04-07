@@ -136,7 +136,7 @@ const Shop = ({ params }: { params: { slug: string } }) => {
           <div className="flex gap-4 ">
             <div className="flex gap-4 flex-col items-center  flex-1">
               <Input
-                placeholder="Type GHO amount"
+                placeholder="Type USDC amount"
                 className="bg-bg-2-60 ring-none border-none text-theme-300 placeholder:text-theme-300 py-1 w-full rounded-full px-2"
               />
               <Slider
