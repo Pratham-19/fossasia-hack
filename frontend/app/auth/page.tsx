@@ -81,7 +81,7 @@ export default function Page() {
     try {
       const { authContext } = await createPasskeyAccount(name);
 
-      const turnkeySigner = new TurnkeySigner({
+      const turnkeySigner: any = new TurnkeySigner({
         client: getTurnkeyHttpClient(window.location.hostname),
         organizationId: authContext.organizationId,
         signWith: authContext.walletAddress,
@@ -141,7 +141,7 @@ export default function Page() {
       setWalletAddress(walletAddress);
 
       toast.success("Successfully authenticated, setting up your wallet…");
-      const turnkeySigner = new TurnkeySigner({
+      const turnkeySigner: any = new TurnkeySigner({
         client: getTurnkeyHttpClient(window.location.hostname),
         organizationId,
         signWith: walletAddress,

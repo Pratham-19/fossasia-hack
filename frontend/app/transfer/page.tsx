@@ -30,7 +30,7 @@ const Transfer = () => {
       toast.error("Please fill all fields");
       return;
     }
-    const turnkeySigner = new TurnkeySigner({
+    const turnkeySigner: any = new TurnkeySigner({
       client: getTurnkeyHttpClient(window.location.hostname),
       organizationId,
       signWith: walletAddress!,
